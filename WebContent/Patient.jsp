@@ -11,14 +11,36 @@
 <meta charset="ISO-8859-1">
 <title>User Management</title>
 <link rel="stylesheet" href="Views/bootstrap.min.css">
+<link rel="stylesheet" href="Views/navigation.css">
 <script src="Components/jquery-3.5.0.min.js"></script>
 <script src="Components/Patient.js"></script>
 </head>
 <body>
+
+<nav class="nav"> 
+	<div class="container">
+		<div class="logo">
+			<a href="#">Health Care</a>
+		</div>
+		
+		<div class="main_list" id="mainListDiv">
+			<ul class="topnav">
+				<li><a href="#">Admin</a></li>
+				<li><a href="Patient.jsp">Patient</a></li>	
+				<li><a href="#">Doctor</a>
+				</li>	
+				<li><a href="Appointment.jsp">Appointment</a></li>
+				<li><a href="#">Payment</a></li>
+			</ul>
+		</div>
+		
+	</div>
+</nav>
+
 <div class="container">
 		<div class="row">
 			<div class="col-6">
-				<h1>Patient Management</h1>
+				<h1 style="margin-top: 60px">Patient Management</h1>
 
 				<form id="formPatient" name="formPatient" method="post" action="Patient.jsp">
 
