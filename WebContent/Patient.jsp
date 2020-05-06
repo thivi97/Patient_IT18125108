@@ -41,6 +41,8 @@
 		<div class="row">
 			<div class="col-6">
 				<h1 style="margin-top: 60px">Patient Management</h1>
+				
+				<!--  Patient form -->
 
 				<form id="formPatient" name="formPatient" method="post" action="Patient.jsp">
 

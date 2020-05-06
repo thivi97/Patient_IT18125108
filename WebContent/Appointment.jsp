@@ -38,6 +38,8 @@
 			<div class="col-4">
 
 				<h1 Style="margin-top: 55px">Appointments</h1>
+				
+				<!--  Appointment form -->
 
 				<form id="formItem" name="formItem">
 

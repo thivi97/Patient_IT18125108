@@ -14,6 +14,8 @@ public class Appointment {
 		} return con;
 	}
 	
+	//inserting appointment
+	
 	public String insertAppointment(String appointmentid,String doctorid,String doctorName,String patientid,String patientName,String hosName,String date) {
 		String output = "";
 		try {
@@ -52,6 +54,7 @@ public class Appointment {
 	}
 	
 	
+	//read appointment
 	public String getAppointment() {
 		String output = "";
 		try {
@@ -104,6 +107,7 @@ public class Appointment {
 		return output;
 	}
 	
+	//update appointment
 	public String updateAppointment(String pId,String appointmentid,String doctorid,String doctorname,String patientid,String patientname,String hospitalname,String date) {
 		String output = "";
 		try {
@@ -141,7 +145,7 @@ public class Appointment {
 		return output;
 	}
 	
-	
+	//delete update
 	public String deleteAppointment(String pId) {
 		String output = "";
 		try {

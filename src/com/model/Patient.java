@@ -20,6 +20,7 @@ public class Patient {
 		return con;
 	}
 	
+	//read patient
 	public String readUsers() {
 		String output = "";
 		
@@ -84,6 +85,7 @@ public class Patient {
 		return output;
 	}
 	
+	//insert patient details
 	public String insertUser(String firstName,String lastName,String age,String gender,String email,String address,String phoneNumber,String username,String password) {
 		String output = "";
 		try {
@@ -125,6 +127,7 @@ public class Patient {
 		return output;
 	}
 	
+	//update patient
 	public String updateUser(String ID, String firstName, String lastName, String age, String gender, String email, String address, String phoneNumber, String username, String password) {
 		
 		String output = "";
@@ -169,6 +172,7 @@ public class Patient {
 		return output;
 	}
 	
+	//delete patient
 	public String deleteUser(String userID) {
 		String output = "";
 		
