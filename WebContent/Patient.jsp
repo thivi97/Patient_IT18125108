@@ -18,13 +18,13 @@
 <div class="container">
 		<div class="row">
 			<div class="col-6">
-				<h1>User Management</h1>
+				<h1>Patient Management</h1>
 
-				<form id="formUser" name="formUser">
+				<form id="formPatient" name="formPatient" method="post" action="Patient.jsp">
 
 					First Name: <input id="firstName" name="firstName" type="text"
-						class="form-control form-control-sm"> Last Name: <input
-						id="lastName" name="lastName" type="text"
+						class="form-control form-control-sm"> 
+					Last Name: <input id="lastName" name="lastName" type="text"
 						class="form-control form-control-sm"> Age: <input id="age"
 						name="age" type="text" class="form-control form-control-sm">
 
@@ -40,7 +40,7 @@
 						class="form-control form-control-sm"> Password: <input
 						id="password" name="password" type="text"
 						class="form-control form-control-sm"> <br> <input
-						id="btnSave" name="btnSave" value="Save" class="btn btn-primary">
+						id="btnSave" name="btnSave" type="button" value="Save" class="btn btn-primary">
 
 					<input type="hidden" id="hidUserIDSave" name="hidUserIDSave"
 						value="">

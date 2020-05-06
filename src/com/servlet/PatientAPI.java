@@ -12,7 +12,7 @@ import java.util.Scanner;
 import com.model.Patient;
 
 
-@WebServlet("/UsersAPI")
+@WebServlet("/PatientAPI")
 public class PatientAPI extends HttpServlet{
 
 	private static final long serialVersionUID = 1L;
@@ -21,6 +21,11 @@ public class PatientAPI extends HttpServlet{
 	
 	public PatientAPI() {
 		super();
+	}
+	
+	
+	protected void doGet(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException{
+		
 	}
 	
 	protected void doPost(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException{

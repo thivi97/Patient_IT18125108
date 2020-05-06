@@ -1,8 +1,8 @@
 $(document).ready(function() {
-
-    $("#alertSuccess").hide();
-    $("#alertError").hide();
-
+	if ($("#alertSuccess").text().trim() == "") {
+		$("#alertSuccess").hide();
+	}
+	$("#alertError").hide();
 });
 
 // Save
@@ -73,6 +73,8 @@ function onUserSaveComplete(response, status) {
     $("#formUser")[0].reset();
 
 }
+
+$("#formUser").submit();
 
 // Update
 $(document).on("click", ".btnUpdate", function(event)

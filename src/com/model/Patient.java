@@ -11,9 +11,10 @@ public class Patient {
 			Class.forName("com.mysql.jdbc.Driver");
 			
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3305/health","root","msdhoni07@T");
-			
+			System.out.println("Successfully connected to the db");
 		}catch(Exception e) {
 			e.printStackTrace();
+			System.out.println("Connection failed");
 		}
 		
 		return con;
@@ -52,9 +53,9 @@ public class Patient {
 				
 			
 			//add into the html table 
-				output += "<tr><td><input id='hiUserIDSave' name='hiUserIDSave' type='hidden' value= '" + userID + "'>" + userID + "</td>";
+				output += "<tr><td><input id='hiUserIDSave' name='hiUserIDSave' type='hidden' value= '" + userID + "'>" + firstName + "</td>";
 				
-				output += "<td>" + firstName + "</td>";
+	
 				output += "<td>" + lastName + "</td>";
 				output += "<td>" + age + "</td>";
 				output += "<td>" + gender + "</td>";
